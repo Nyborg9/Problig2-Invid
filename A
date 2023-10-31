@@ -1,0 +1,14 @@
+Hor = 400
+Ver = 320
+Redbackground = rectangle(Hor , Ver, "solid", "red")
+WhiteHor = rectangle(Hor, 80, "solid", "white")
+WhiteVer = rectangle(80, Ver, "solid", "white")
+BlueHor = rectangle(Hor, 30, "solid", "blue")
+BlueVer = rectangle(30, Ver, "solid", "blue")
+
+N1 = overlay-xy(WhiteHor, 0, -120, Redbackground)
+N2 = overlay-xy(WhiteVer, -120, 0, N1)
+N3 = overlay-xy(BlueHor, 0, -145, N2)
+N4 = overlay-xy(BlueVer, -145, 0, N3)
+
+NorwegianFlag
