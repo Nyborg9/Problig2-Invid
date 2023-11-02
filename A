@@ -6,9 +6,39 @@ WhiteVer = rectangle(80, Ver, "solid", "white")
 BlueHor = rectangle(Hor, 30, "solid", "blue")
 BlueVer = rectangle(30, Ver, "solid", "blue")
 
+Bluebackground = rectangle(Hor, Ver, "solid", "royal-blue")
+YellowHor = rectangle(Hor, 80, "solid", "yellow")
+YellowVer = rectangle(80, Ver, "solid", "yellow")
+
+Whitebackground = rectangle(Hor, Ver, "solid", "white")
+BlueHor2 = rectangle(Hor, 80, "solid", "blue")
+BlueVer2 = rectangle(80, Ver, "solid", "blue")
+
+RedHor = rectangle(Hor, 30, "solid", "red")
+RedVer = rectangle(30, Ver, "solid", "red")
+
 N1 = overlay-xy(WhiteHor, 0, -120, Redbackground)
 N2 = overlay-xy(WhiteVer, -120, 0, N1)
 N3 = overlay-xy(BlueHor, 0, -145, N2)
 N4 = overlay-xy(BlueVer, -145, 0, N3)
 
-NorwegianFlag
+D1 = overlay-xy(WhiteHor, 0, -120, Redbackground)
+D2 = overlay-xy(WhiteVer, -120, 0, D1)
+
+S1 = overlay-xy(YellowHor, 0, -120, Bluebackground)
+S2 = overlay-xy(YellowVer, -120, 0, S1)
+
+Fi1 = overlay-xy(BlueHor2, 0, -120, Whitebackground)
+Fi2 = overlay-xy(BlueVer2, -120, 0, Fi1)
+
+I1 = overlay-xy(WhiteHor, 0, -120, Bluebackground)
+I2 = overlay-xy(WhiteVer, -120, 0, I1)
+I3 = overlay-xy(RedHor, 0, -145, I2)
+I4 = overlay-xy(RedVer, -145, 0, I3)
+
+Fr1 = overlay-xy(BlueHor2, 0, -120, Whitebackground)
+Fr2 = overlay-xy(BlueVer2, -120, 0, Fr1)
+Fr3 = overlay-xy(RedHor, 0, -145, Fr2)
+Fr4 = overlay-xy(RedVer, -145, 0, Fr3)
+
+
