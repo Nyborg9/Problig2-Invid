@@ -17,43 +17,42 @@ BlueVer2 = rectangle(80, Ver, "solid", "blue")
 RedHor = rectangle(Hor, 30, "solid", "red")
 RedVer = rectangle(30, Ver, "solid", "red")
 
-N1 = overlay-xy(WhiteHor, 0, -120, Redbackground)
-N2 = overlay-xy(WhiteVer, -120, 0, N1)
-N3 = overlay-xy(BlueHor, 0, -145, N2)
-N4 = overlay-xy(BlueVer, -145, 0, N3)
 
-D1 = overlay-xy(WhiteHor, 0, -120, Redbackground)
-D2 = overlay-xy(WhiteVer, -120, 0, D1)
 
-S1 = overlay-xy(YellowHor, 0, -120, Bluebackground)
-S2 = overlay-xy(YellowVer, -120, 0, S1)
 
-Fi1 = overlay-xy(BlueHor2, 0, -120, Whitebackground)
-Fi2 = overlay-xy(BlueVer2, -120, 0, Fi1)
-
-I1 = overlay-xy(WhiteHor, 0, -120, Bluebackground)
-I2 = overlay-xy(WhiteVer, -120, 0, I1)
-I3 = overlay-xy(RedHor, 0, -145, I2)
-I4 = overlay-xy(RedVer, -145, 0, I3)
-
-Fr1 = overlay-xy(BlueHor2, 0, -120, Whitebackground)
-Fr2 = overlay-xy(BlueVer2, -120, 0, Fr1)
-Fr3 = overlay-xy(RedHor, 0, -145, Fr2)
-Fr4 = overlay-xy(RedVer, -145, 0, Fr3)
 
 fun flagg(land):
   if land == "Norge":
+    N1 = overlay-xy(WhiteHor, 0, -120, Redbackground)
+    N2 = overlay-xy(WhiteVer, -120, 0, N1)
+    N3 = overlay-xy(BlueHor, 0, -145, N2)
+    N4 = overlay-xy(BlueVer, -145, 0, N3)
     N4
   else if land == "Sverige":
+    S1 = overlay-xy(YellowHor, 0, -120, Bluebackground)
+    S2 = overlay-xy(YellowVer, -120, 0, S1)
     S2
   else if land == "Danmark":
+    D1 = overlay-xy(WhiteHor, 0, -120, Redbackground)
+    D2 = overlay-xy(WhiteVer, -120, 0, D1)
     D2
   else if land == "Finland":
+    Fi1 = overlay-xy(BlueHor2, 0, -120, Whitebackground)
+    Fi2 = overlay-xy(BlueVer2, -120, 0, Fi1)
     Fi2
   else if land == "Island":
+    I1 = overlay-xy(WhiteHor, 0, -120, Bluebackground)
+    I2 = overlay-xy(WhiteVer, -120, 0, I1)
+    I3 = overlay-xy(RedHor, 0, -145, I2)
+    I4 = overlay-xy(RedVer, -145, 0, I3)
     I4
   else if land == "Færøyne":
+    Fr1 = overlay-xy(BlueHor2, 0, -120, Whitebackground)
+    Fr2 = overlay-xy(BlueVer2, -120, 0, Fr1)
+    Fr3 = overlay-xy(RedHor, 0, -145, Fr2)
+    Fr4 = overlay-xy(RedVer, -145, 0, Fr3)
     Fr4
+    
   end
 end
-flagg("Færøyne")
+flagg("Norge")
