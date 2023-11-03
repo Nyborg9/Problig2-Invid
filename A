@@ -43,20 +43,17 @@ Fr4 = overlay-xy(RedVer, -145, 0, Fr3)
 
 fun flagg(land):
   if land == "Norge":
-    backgroundcol = "red"
+    N4
   else if land == "Sverige":
-    backgroundcol = "blue"
+    S2
+  else if land == "Danmark":
+    D2
+  else if land == "Finland":
+    Fi2
+  else if land == "Island":
+    I4
+  else if land == "Færøyne":
+    Fr4
   end
-  Hor = 400
-  Ver = 320
-  Background = rectangle(Hor , Ver, "solid", backgroundcol)
-  WhiteHor = rectangle(Hor, 80, "solid", "white")
-  WhiteVer = rectangle(80, Ver, "solid", "white")
-  BlueHor = rectangle(Hor, 30, "solid", "blue")
-  BlueVer = rectangle(30, Ver, "solid", "blue")
-  
-  N1 = overlay-xy(WhiteHor, 0, -120, Background)
-  N2 = overlay-xy(WhiteVer, -120, 0, N1)
-  N3 = overlay-xy(BlueHor, 0, -145, N2)
-  N4 = overlay-xy(BlueVer, -145, 0, N3)
 end
+flagg("Færøyne")
