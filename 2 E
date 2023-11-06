@@ -19,7 +19,7 @@ end
 fun energi-to-number(str :: String) -> Number:
    cases(Option) string-to-number(str):
     | some(b) => b
-    | none => CarConsumtion(20, 10, 4)
+    | none => CarConsumtion(20, 10, 4) #This line gets the function to replace a none output with the CarConsumtion 
   end
 end
 
@@ -29,3 +29,4 @@ TransformedColumn = transform-column(kWh-wealthy-consumer-data, "energi", energi
 SumOfTable = sum(TransformedColumn, "energi") + CarConsumtion(20, 10, 4)
 SumOfTable
 bar-chart(TransformedColumn, "komponent", "energi")
+#bar-chart creates a visual chart of the table
