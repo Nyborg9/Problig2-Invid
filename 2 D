@@ -26,6 +26,7 @@ fun CarConsumtion(distance-travelled-per-day, distance-per-unit-of-fuel, energy-
   energy-per-day = ( distance-travelled-per-day / distance-per-unit-of-fuel ) * energy-per-unit-of-fuel
 energy-per-day
 end
-
+#Creates a funtion that uses the car energy formula
 SumOfTable = sum(TransformedColumn, "energi") + CarConsumtion(20, 10, 4)
+#Adds all of the energy column and the CarConsumtion together
 SumOfTable
