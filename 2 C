@@ -21,3 +21,4 @@ where:
 end
 
 transform-column(kWh-wealthy-consumer-data, "energi", energi-to-number)
+#I use the transform-column function to make all the strings in the energi column to numbers
