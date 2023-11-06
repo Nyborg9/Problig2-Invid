@@ -20,12 +20,12 @@ where:
   energi-to-number("48") is 48
 end
 
-transform-column(kWh-wealthy-consumer-data, "energi", energi-to-number)
+TransformedColumn = transform-column(kWh-wealthy-consumer-data, "energi", energi-to-number)
 
 fun CarConsumtion(distance-travelled-per-day, distance-per-unit-of-fuel, energy-per-unit-of-fuel):
-  energy-per-day = ( distance-travelled-per-day / 
-                            distance-per-unit-of-fuel ) * 
-                                        energy-per-unit-of-fuel
-  energy-per-day
+  energy-per-day = ( distance-travelled-per-day / distance-per-unit-of-fuel ) * energy-per-unit-of-fuel
+energy-per-day
 end
 
+SumOfTable = sum(TransformedColumn, "energi") + CarConsumtion(20, 10, 4)
+SumOfTable
